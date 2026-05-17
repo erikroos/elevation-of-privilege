@@ -41,7 +41,7 @@ that points back to its original source.
 
 - **Author**: Erik Roos, 2026
 - **License**: CC BY 4.0 (see `LICENSE`)
-- **Source**: <https://github.com/...> *(fill in once published)*
+- **Source**: <https://github.com/erikroos/elevation-of-privilege/>
 
 If you fork or re-host this project, you MUST keep the attributions in
 `ATTRIBUTION.md`, the per-card credit line in the UI, and the
