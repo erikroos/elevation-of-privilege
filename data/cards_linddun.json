@@ -1,0 +1,248 @@
+{
+  "deck_type": "linddun",
+  "attribution": {
+    "name": "LINDDUN GO (2024)",
+    "authors": "DistriNet, KU Leuven (Kim Wuyts e.a.)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://linddun.org/go/"
+  },
+  "trump_suit": "L",
+  "suits": [
+    {
+      "key": "L",
+      "name": "Linking",
+      "icon": "🔗"
+    },
+    {
+      "key": "I",
+      "name": "Identifying",
+      "icon": "🪪"
+    },
+    {
+      "key": "N",
+      "name": "Non-repudiation",
+      "icon": "✍️"
+    },
+    {
+      "key": "D",
+      "name": "Detecting",
+      "icon": "🔍"
+    },
+    {
+      "key": "DD",
+      "name": "Data Disclosure",
+      "icon": "📄"
+    },
+    {
+      "key": "U",
+      "name": "Unawareness",
+      "icon": "❓"
+    },
+    {
+      "key": "NC",
+      "name": "Non-compliance",
+      "icon": "⚖️"
+    }
+  ],
+  "cards": [
+    {
+      "suit": "L",
+      "rank": "2",
+      "title": "Linked User Requests",
+      "description": "User requests can be linked because they contain a unique identifier."
+    },
+    {
+      "suit": "L",
+      "rank": "3",
+      "title": "Linkable User Requests",
+      "description": "User requests can be linked because they contain attributes that can be combined into quasi-identifiers."
+    },
+    {
+      "suit": "L",
+      "rank": "4",
+      "title": "Linking through Distinguishable Patterns",
+      "description": "Patterns in the (meta)data contained in user requests can be used to link them to each other."
+    },
+    {
+      "suit": "L",
+      "rank": "5",
+      "title": "Linkable Dataset",
+      "description": "Stored personal data can be linked to individuals."
+    },
+    {
+      "suit": "L",
+      "rank": "6",
+      "title": "Profiling Users",
+      "description": "Users can be profiled by analyzing their data for patterns."
+    },
+    {
+      "suit": "I",
+      "rank": "2",
+      "title": "Identified User Requests",
+      "description": "The incoming user requests contain data that directly reveals the user identity."
+    },
+    {
+      "suit": "I",
+      "rank": "3",
+      "title": "Identifiable User Requests",
+      "description": "The user can be identified because the data in their requests can be used to infer who they are."
+    },
+    {
+      "suit": "I",
+      "rank": "4",
+      "title": "Identifiable Data Flows",
+      "description": "Data sent to the system is sufficiently revealing to identify the user."
+    },
+    {
+      "suit": "I",
+      "rank": "5",
+      "title": "Identifiers in Data Requests",
+      "description": "Communication contains (quasi-)identifiers."
+    },
+    {
+      "suit": "I",
+      "rank": "6",
+      "title": "Identifiable Dataset",
+      "description": "Stored data can be used to identify individuals."
+    },
+    {
+      "suit": "N",
+      "rank": "2",
+      "title": "Non-Repudiation of Service Usage",
+      "description": "Users cannot deny having used a service because of authentication or logged access."
+    },
+    {
+      "suit": "N",
+      "rank": "3",
+      "title": "Non-Repudiation of Sending",
+      "description": "Users cannot deny having sent a message."
+    },
+    {
+      "suit": "N",
+      "rank": "4",
+      "title": "Non-Repudiation of Receipt",
+      "description": "Users cannot deny having received a message."
+    },
+    {
+      "suit": "N",
+      "rank": "5",
+      "title": "Non-Repudiation of Storage",
+      "description": "Users cannot deny claims about data stored in non-repudiable storage."
+    },
+    {
+      "suit": "N",
+      "rank": "6",
+      "title": "Non-Repudiation of Hidden Data or Metadata",
+      "description": "Hidden or metadata in a document prevent users from denying claims associated with it."
+    },
+    {
+      "suit": "D",
+      "rank": "2",
+      "title": "Detectable Users",
+      "description": "Inferring the existence of a user from the system's response."
+    },
+    {
+      "suit": "D",
+      "rank": "3",
+      "title": "Detectable Service Usage",
+      "description": "Detecting communication between a service and its users."
+    },
+    {
+      "suit": "D",
+      "rank": "4",
+      "title": "Detectable Events",
+      "description": "Detecting side effects or communications triggered by application events."
+    },
+    {
+      "suit": "D",
+      "rank": "5",
+      "title": "Detectable Records",
+      "description": "Detecting the existence of records in a system."
+    },
+    {
+      "suit": "DD",
+      "rank": "2",
+      "title": "Excessively Sensitive Data Collected",
+      "description": "The system acquires more sensitive or finegrained data than strictly necessary for its functionality."
+    },
+    {
+      "suit": "DD",
+      "rank": "3",
+      "title": "Excessive Amount of Data Collected",
+      "description": "The system acquires more data than strictly needed for its functionality."
+    },
+    {
+      "suit": "DD",
+      "rank": "4",
+      "title": "Unnecessary Data Analysis",
+      "description": "Data is further processed, analyzed, or enriched in a way that is not strictly necessary for the functionality."
+    },
+    {
+      "suit": "DD",
+      "rank": "5",
+      "title": "Unnecessary Data Retention",
+      "description": "Data is stored for longer than needed."
+    },
+    {
+      "suit": "DD",
+      "rank": "6",
+      "title": "Overexposure of Personal Data",
+      "description": "Personal data is shared with more services or external parties than necessary."
+    },
+    {
+      "suit": "U",
+      "rank": "2",
+      "title": "Insufficient Transparency",
+      "description": "Data subjects are insufficiently informed about the collection and processing of their personal data."
+    },
+    {
+      "suit": "U",
+      "rank": "3",
+      "title": "Insufficient Information when Sharing Data of Others",
+      "description": "When sharing personal data of others, users are insufficiently informed about the further data processing."
+    },
+    {
+      "suit": "U",
+      "rank": "4",
+      "title": "Insufficient Privacy Controls",
+      "description": "Data subjects have insufficient controls to manage their preferences."
+    },
+    {
+      "suit": "U",
+      "rank": "5",
+      "title": "Insufficient Access",
+      "description": "Data subjects do not have access to their personal data."
+    },
+    {
+      "suit": "U",
+      "rank": "6",
+      "title": "Insufficient Rectification or Erasure",
+      "description": "Data subjects cannot rectify or erase their personal data."
+    },
+    {
+      "suit": "NC",
+      "rank": "2",
+      "title": "Non-Compliance of Processing with Applicable Regulations",
+      "description": "The processing of personal data by the system is not compliant with applicable privacy regulations."
+    },
+    {
+      "suit": "NC",
+      "rank": "3",
+      "title": "Non-Adherence to Privacy Standards",
+      "description": "The system is not compliant with privacy standards and best practices."
+    },
+    {
+      "suit": "NC",
+      "rank": "4",
+      "title": "Improper Data Lifecycle Management",
+      "description": "Data is not properly managed throughout its entire lifecycle within the system."
+    },
+    {
+      "suit": "NC",
+      "rank": "5",
+      "title": "Insufficient Security of Processing",
+      "description": "Data security measures and processes do not adhere to risk and security management best practices and standards."
+    }
+  ]
+}

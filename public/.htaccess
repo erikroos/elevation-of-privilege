@@ -1,0 +1,38 @@
+# Force PHP 8.1+ op Antagonist (selecteer in CP, deze regel is ter info).
+# AddHandler application/x-httpd-php81 .php
+
+# Upload-limieten verhogen tot 15 MB (we accepteren max 10 MB in PHP,
+# post_max_size moet hoger zijn dan upload_max_filesize). Werkt op
+# Antagonist via mod_php; bij PHP-FPM moet dit via de CP (PHP-instellingen).
+<IfModule mod_php.c>
+    php_value upload_max_filesize 15M
+    php_value post_max_size 15M
+</IfModule>
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 15M
+    php_value post_max_size 15M
+</IfModule>
+<IfModule mod_php8.c>
+    php_value upload_max_filesize 15M
+    php_value post_max_size 15M
+</IfModule>
+
+Options -Indexes
+
+RewriteEngine On
+
+# Alles wat geen bestaand bestand of dir is gaat naar index.php (front controller).
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Veiligheid: sessies en cookies alleen via HTTPS in productie.
+# Verwijder de # als je site over HTTPS draait (Antagonist Let's Encrypt).
+# Header always set Strict-Transport-Security "max-age=31536000"
+
+# Geen sniffing van content types.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "same-origin"
+</IfModule>

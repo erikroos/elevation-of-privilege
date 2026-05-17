@@ -1,0 +1,513 @@
+{
+  "deck_type": "stride",
+  "attribution": {
+    "name": "Elevation of Privilege",
+    "authors": "Adam Shostack / Fraser Scott, Microsoft Corporation",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source_url": "https://github.com/adamshostack/eop"
+  },
+  "trump_suit": "E",
+  "suits": [
+    {
+      "key": "S",
+      "name": "Spoofing",
+      "icon": "🎭"
+    },
+    {
+      "key": "T",
+      "name": "Tampering",
+      "icon": "🔨"
+    },
+    {
+      "key": "R",
+      "name": "Repudiation",
+      "icon": "✂️"
+    },
+    {
+      "key": "I",
+      "name": "Information Disclosure",
+      "icon": "👁️"
+    },
+    {
+      "key": "D",
+      "name": "Denial of Service",
+      "icon": "🚫"
+    },
+    {
+      "key": "E",
+      "name": "Elevation of Privilege",
+      "icon": "⬆️"
+    }
+  ],
+  "cards": [
+    {
+      "suit": "S",
+      "rank": "2",
+      "title": "Spoofing 2",
+      "description": "An attacker could take over the port or socket that the server normally uses"
+    },
+    {
+      "suit": "S",
+      "rank": "3",
+      "title": "Spoofing 3",
+      "description": "An attacker could try one credential after another and there's nothing to slow them down (online or offline)"
+    },
+    {
+      "suit": "S",
+      "rank": "4",
+      "title": "Spoofing 4",
+      "description": "An attacker can anonymously connect, because we expect authentication to be done at a higher level"
+    },
+    {
+      "suit": "S",
+      "rank": "5",
+      "title": "Spoofing 5",
+      "description": "An attacker can confuse a client because there are too many ways to identify a server"
+    },
+    {
+      "suit": "S",
+      "rank": "6",
+      "title": "Spoofing 6",
+      "description": "An attacker can spoof a server because identifiers aren't stored on the client and checked for consistency on re-connection (that is, there's no key persistence)"
+    },
+    {
+      "suit": "S",
+      "rank": "7",
+      "title": "Spoofing 7",
+      "description": "An attacker can connect to a server or peer over a link that isn't authenticated (and encrypted)"
+    },
+    {
+      "suit": "S",
+      "rank": "8",
+      "title": "Spoofing 8",
+      "description": "An attacker could steal credentials stored on the server and reuse them (for example, a key is stored in a world readable file)"
+    },
+    {
+      "suit": "S",
+      "rank": "9",
+      "title": "Spoofing 9",
+      "description": "An attacker who gets a password can reuse it (Use stronger authenticators)"
+    },
+    {
+      "suit": "S",
+      "rank": "T",
+      "title": "Spoofing 10",
+      "description": "An attacker can choose to use weaker or no authentication"
+    },
+    {
+      "suit": "S",
+      "rank": "J",
+      "title": "Spoofing J",
+      "description": "An attacker could steal credentials stored on the client and reuse them"
+    },
+    {
+      "suit": "S",
+      "rank": "Q",
+      "title": "Spoofing Q",
+      "description": "An attacker could go after the way credentials are updated or recovered (account recovery doesn't require disclosing the old password)"
+    },
+    {
+      "suit": "S",
+      "rank": "K",
+      "title": "Spoofing K",
+      "description": "Your system ships with a default admin password, and doesn't force a change"
+    },
+    {
+      "suit": "S",
+      "rank": "A",
+      "title": "Spoofing A",
+      "description": "You've invented a new Spoofing attack"
+    },
+    {
+      "suit": "T",
+      "rank": "2",
+      "title": "Tampering 2",
+      "description": "An attacker can modify your build system and produce signed builds of your software"
+    },
+    {
+      "suit": "T",
+      "rank": "3",
+      "title": "Tampering 3",
+      "description": "An attacker can take advantage of your custom key exchange or integrity control which you built instead of using standard crypto"
+    },
+    {
+      "suit": "T",
+      "rank": "4",
+      "title": "Tampering 4",
+      "description": "Your code makes access control decisions all over the place, rather than with a security kernel"
+    },
+    {
+      "suit": "T",
+      "rank": "5",
+      "title": "Tampering 5",
+      "description": "An attacker can replay data without detection because your code doesn't provide timestamps or sequence numbers"
+    },
+    {
+      "suit": "T",
+      "rank": "6",
+      "title": "Tampering 6",
+      "description": "An attacker can write to a data store your code relies on"
+    },
+    {
+      "suit": "T",
+      "rank": "7",
+      "title": "Tampering 7",
+      "description": "An attacker can bypass permissions because you don't make names canonical before checking access permissions"
+    },
+    {
+      "suit": "T",
+      "rank": "8",
+      "title": "Tampering 8",
+      "description": "An attacker can manipulate data because there's no integrity protection for data on the network"
+    },
+    {
+      "suit": "T",
+      "rank": "9",
+      "title": "Tampering 9",
+      "description": "An attacker can provide or control state information"
+    },
+    {
+      "suit": "T",
+      "rank": "T",
+      "title": "Tampering 10",
+      "description": "An attacker can alter information in a data store because it has weak/open permissions or includes a group which is equivalent to everyone (\"anyone with a Facebook account\")"
+    },
+    {
+      "suit": "T",
+      "rank": "J",
+      "title": "Tampering J",
+      "description": "An attacker can write to some resource because permissions are granted to the world or there are no ACLs"
+    },
+    {
+      "suit": "T",
+      "rank": "Q",
+      "title": "Tampering Q",
+      "description": "An attacker can change parameters over a trust boundary and after validation (for example, important parameters in a hidden field in HTML, or passing a pointer to critical memory)"
+    },
+    {
+      "suit": "T",
+      "rank": "K",
+      "title": "Tampering K",
+      "description": "An attacker can load code inside your process via an extension point"
+    },
+    {
+      "suit": "T",
+      "rank": "A",
+      "title": "Tampering A",
+      "description": "You've invented a new Tampering attack"
+    },
+    {
+      "suit": "R",
+      "rank": "2",
+      "title": "Repudiation 2",
+      "description": "An attacker can pass data through the log to attack a log reader, and there's no documentation of what sorts of validation are done"
+    },
+    {
+      "suit": "R",
+      "rank": "3",
+      "title": "Repudiation 3",
+      "description": "A low privilege attacker can read interesting security information in the logs"
+    },
+    {
+      "suit": "R",
+      "rank": "4",
+      "title": "Repudiation 4",
+      "description": "An attacker can alter digital signatures because the digital signature system you're implementing is weak, or uses MACs where it should use a signature"
+    },
+    {
+      "suit": "R",
+      "rank": "5",
+      "title": "Repudiation 5",
+      "description": "An attacker can alter log messages on a network because they lack strong integrity controls"
+    },
+    {
+      "suit": "R",
+      "rank": "6",
+      "title": "Repudiation 6",
+      "description": "An attacker can create a log entry without a timestamp (or no log entry is timestamped)"
+    },
+    {
+      "suit": "R",
+      "rank": "7",
+      "title": "Repudiation 7",
+      "description": "An attacker can make the logs wrap around and lose data"
+    },
+    {
+      "suit": "R",
+      "rank": "8",
+      "title": "Repudiation 8",
+      "description": "An attacker can make a log lose or confuse security information"
+    },
+    {
+      "suit": "R",
+      "rank": "9",
+      "title": "Repudiation 9",
+      "description": "An attacker can use a shared key to authenticate as different principals, confusing the information in the logs"
+    },
+    {
+      "suit": "R",
+      "rank": "T",
+      "title": "Repudiation 10",
+      "description": "An attacker can get arbitrary data into logs from unauthenticated (or weakly authenticated) outsiders without validation"
+    },
+    {
+      "suit": "R",
+      "rank": "J",
+      "title": "Repudiation J",
+      "description": "An attacker can edit logs and there's no way to tell (perhaps because there's no heartbeat option for the logging system)"
+    },
+    {
+      "suit": "R",
+      "rank": "Q",
+      "title": "Repudiation Q",
+      "description": "An attacker can say \"I didn't do that,\" and you'd have no way to prove them wrong"
+    },
+    {
+      "suit": "R",
+      "rank": "K",
+      "title": "Repudiation K",
+      "description": "The system has no logs"
+    },
+    {
+      "suit": "R",
+      "rank": "A",
+      "title": "Repudiation A",
+      "description": "You've invented a new Repudiation attack"
+    },
+    {
+      "suit": "I",
+      "rank": "2",
+      "title": "Information Disclosure 2",
+      "description": "An attacker can brute-force file encryption because there's no defense in place (example defense, password stretching)"
+    },
+    {
+      "suit": "I",
+      "rank": "3",
+      "title": "Information Disclosure 3",
+      "description": "An attacker can see error messages with security sensitive content"
+    },
+    {
+      "suit": "I",
+      "rank": "4",
+      "title": "Information Disclosure 4",
+      "description": "An attacker can read content because messages (say, an email or HTTP cookie) aren't encrypted even if the channel is encrypted"
+    },
+    {
+      "suit": "I",
+      "rank": "5",
+      "title": "Information Disclosure 5",
+      "description": "An attacker may be able to read a document or data because it's encrypted with a non-standard algorithm"
+    },
+    {
+      "suit": "I",
+      "rank": "6",
+      "title": "Information Disclosure 6",
+      "description": "An attacker can read data because it's hidden or occluded (for undo or change tracking) and the user might forget that it's there"
+    },
+    {
+      "suit": "I",
+      "rank": "7",
+      "title": "Information Disclosure 7",
+      "description": "An attacker can act as a 'man in the middle' because you don't authenticate endpoints of a network connection"
+    },
+    {
+      "suit": "I",
+      "rank": "8",
+      "title": "Information Disclosure 8",
+      "description": "An attacker can access information through a search indexer, logger, or other such mechanism"
+    },
+    {
+      "suit": "I",
+      "rank": "9",
+      "title": "Information Disclosure 9",
+      "description": "An attacker can read sensitive information in a file with permissive permissions"
+    },
+    {
+      "suit": "I",
+      "rank": "T",
+      "title": "Information Disclosure 10",
+      "description": "An attacker can read information in files or databases with no access controls"
+    },
+    {
+      "suit": "I",
+      "rank": "J",
+      "title": "Information Disclosure J",
+      "description": "An attacker can discover the fixed key being used to encrypt"
+    },
+    {
+      "suit": "I",
+      "rank": "Q",
+      "title": "Information Disclosure Q",
+      "description": "An attacker can read the entire channel because the channel (say, HTTP or SMTP) isn't encrypted"
+    },
+    {
+      "suit": "I",
+      "rank": "K",
+      "title": "Information Disclosure K",
+      "description": "An attacker can read network information because there's no cryptography used"
+    },
+    {
+      "suit": "I",
+      "rank": "A",
+      "title": "Information Disclosure A",
+      "description": "You've invented a new Information Disclosure attack"
+    },
+    {
+      "suit": "D",
+      "rank": "2",
+      "title": "Denial of Service 2",
+      "description": "An attacker can make your authentication system unusable or unavailable"
+    },
+    {
+      "suit": "D",
+      "rank": "3",
+      "title": "Denial of Service 3",
+      "description": "An attacker can drain our easily replacable battery (battery, temporary)"
+    },
+    {
+      "suit": "D",
+      "rank": "4",
+      "title": "Denial of Service 4",
+      "description": "An attacker can drain a battery that's hard to replace (sealed in a phone, an implanted medical device, or in a hard to reach location) (battery, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "5",
+      "title": "Denial of Service 5",
+      "description": "An attacker can spend our cloud budget (budget, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "6",
+      "title": "Denial of Service 6",
+      "description": "An attacker can make a server unavailable or unusable without ever authenticating but the problem goes away when the attacker stops (server, anonymous, temporary)"
+    },
+    {
+      "suit": "D",
+      "rank": "7",
+      "title": "Denial of Service 7",
+      "description": "An attacker can make a client unavailable or unusable and the problem persists after the attacker goes away (client, auth, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "8",
+      "title": "Denial of Service 8",
+      "description": "An attacker can make a server unavailable or unusable and the problem persists after the attacker goes away (server, auth, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "9",
+      "title": "Denial of Service 9",
+      "description": "An attacker can make a client unavailable or unusable without ever authenticating and the problem persists after the attacker goes away (client, anon, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "T",
+      "title": "Denial of Service 10",
+      "description": "An attacker can make a server unavailable or unusable without ever authenticating and the problem persists after the attacker goes away (server, anon, persist)"
+    },
+    {
+      "suit": "D",
+      "rank": "J",
+      "title": "Denial of Service J",
+      "description": "An attacker can cause the logging subsystem to stop working"
+    },
+    {
+      "suit": "D",
+      "rank": "Q",
+      "title": "Denial of Service Q",
+      "description": "An attacker can amplify a Denial of Service attack through this component with amplification on the order of 10 to 1"
+    },
+    {
+      "suit": "D",
+      "rank": "K",
+      "title": "Denial of Service K",
+      "description": "An attacker can amplify a Denial of Service attack through this component with amplification on the order of 100 to 1"
+    },
+    {
+      "suit": "D",
+      "rank": "A",
+      "title": "Denial of Service A",
+      "description": "You've invented a new Denial of Service attack"
+    },
+    {
+      "suit": "E",
+      "rank": "2",
+      "title": "Elevation of Privilege 2",
+      "description": "An attacker has compromised a key technology supplier"
+    },
+    {
+      "suit": "E",
+      "rank": "3",
+      "title": "Elevation of Privilege 3",
+      "description": "An attacker can access the cloud service which manages your devices"
+    },
+    {
+      "suit": "E",
+      "rank": "4",
+      "title": "Elevation of Privilege 4",
+      "description": "An attacker can escape from a container or other sandbox"
+    },
+    {
+      "suit": "E",
+      "rank": "5",
+      "title": "Elevation of Privilege 5",
+      "description": "An attacker can force data through different validation paths which give different results"
+    },
+    {
+      "suit": "E",
+      "rank": "6",
+      "title": "Elevation of Privilege 6",
+      "description": "An attacker could take advantage of permissions you set, but don't use"
+    },
+    {
+      "suit": "E",
+      "rank": "7",
+      "title": "Elevation of Privilege 7",
+      "description": "An attacker can provide a pointer across a trust boundary, rather than data which can be validated"
+    },
+    {
+      "suit": "E",
+      "rank": "8",
+      "title": "Elevation of Privilege 8",
+      "description": "An attacker can enter data that is checked while still under their control and used later on the other side of a trust boundary"
+    },
+    {
+      "suit": "E",
+      "rank": "9",
+      "title": "Elevation of Privilege 9",
+      "description": "There's no reasonable way for a caller to figure out what validation of tainted data you perform before passing it to them"
+    },
+    {
+      "suit": "E",
+      "rank": "T",
+      "title": "Elevation of Privilege 10",
+      "description": "There's no reasonable way for a caller to figure out what security assumptions you make"
+    },
+    {
+      "suit": "E",
+      "rank": "J",
+      "title": "Elevation of Privilege J",
+      "description": "An attacker can reflect input back to a user, like cross site scripting"
+    },
+    {
+      "suit": "E",
+      "rank": "Q",
+      "title": "Elevation of Privilege Q",
+      "description": "You include user-generated content within your page, possibly including the content of random URLs"
+    },
+    {
+      "suit": "E",
+      "rank": "K",
+      "title": "Elevation of Privilege K",
+      "description": "An attacker can inject a command that the system will run at a higher privilege level"
+    },
+    {
+      "suit": "E",
+      "rank": "A",
+      "title": "Elevation of Privilege A",
+      "description": "You've invented a new Elevation of Privilege attack"
+    }
+  ]
+}

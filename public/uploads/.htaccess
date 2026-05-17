@@ -1,0 +1,14 @@
+# Geen execute in upload-directory. Alleen statische bestanden serveren.
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh)$">
+    Require all denied
+</FilesMatch>
+
+# Voor SVG: dwing image/svg+xml af zodat scripts in SVG niet als HTML
+# worden geserveerd.
+<FilesMatch "\.svg$">
+    ForceType image/svg+xml
+    Header set Content-Security-Policy "script-src 'none'"
+</FilesMatch>
+
+Options -ExecCGI -Indexes
+RemoveHandler .php .phtml .phar
