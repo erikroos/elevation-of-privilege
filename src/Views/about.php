@@ -48,7 +48,23 @@
         CC BY 4.0
       </a>
     </li>
+    <li>Bron:
+      <a href="https://github.com/erikroos/elevation-of-privilege" target="_blank" rel="noopener">
+        github.com/erikroos/elevation-of-privilege
+      </a>
+    </li>
   </ul>
+</section>
+
+<section class="card">
+  <h2>Bijdragen</h2>
+  <p>
+    Bugs of suggesties? Open een
+    <a href="https://github.com/erikroos/elevation-of-privilege/issues/new" target="_blank" rel="noopener">issue</a>
+    of dien een
+    <a href="https://github.com/erikroos/elevation-of-privilege/pulls" target="_blank" rel="noopener">pull request</a>
+    in op GitHub.
+  </p>
 </section>
 
 <section class="card">

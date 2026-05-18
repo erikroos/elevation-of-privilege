@@ -34,6 +34,11 @@
       <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank">CC BY 4.0</a>.
       Volledige attributie: <a href="/about">/about</a>.
     </p>
+    <p>
+      Broncode op <a href="https://github.com/erikroos/elevation-of-privilege" rel="noopener" target="_blank">GitHub</a> —
+      <a href="https://github.com/erikroos/elevation-of-privilege/issues/new" rel="noopener" target="_blank">bug melden</a> ·
+      <a href="https://github.com/erikroos/elevation-of-privilege/pulls" rel="noopener" target="_blank">pull request indienen</a>.
+    </p>
   </footer>
   <?php if (!empty($game['code'])): ?>
     <script src="/assets/js/poll.js" defer></script>

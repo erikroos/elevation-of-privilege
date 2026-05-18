@@ -23,11 +23,29 @@ Een zelf te hosten implementatie van het serious card game **Elevation of Privil
 
 ## Lokale ontwikkeling
 
+Workers > 1 is nodig zodat de long-poll endpoint geen andere requests blokkeert.
+
+**bash / zsh (Linux, macOS):**
+
 ```bash
-cd eop
-# Workers > 1 is nodig zodat de long-poll endpoint geen andere requests blokkeert
-PHP_CLI_SERVER_WORKERS=4 php -d upload_max_filesize=15M -d post_max_size=15M \
-  -S 127.0.0.1:8000 -t public
+cd elevation-of-privilege
+PHP_CLI_SERVER_WORKERS=4 php -d upload_max_filesize=15M -d post_max_size=15M -S 127.0.0.1:8000 -t public
+```
+
+**PowerShell (Windows):**
+
+```powershell
+cd elevation-of-privilege
+$env:PHP_CLI_SERVER_WORKERS=4
+php -d upload_max_filesize=15M -d post_max_size=15M -S 127.0.0.1:8000 -t public
+```
+
+**cmd.exe (Windows):**
+
+```cmd
+cd elevation-of-privilege
+set PHP_CLI_SERVER_WORKERS=4
+php -d upload_max_filesize=15M -d post_max_size=15M -S 127.0.0.1:8000 -t public
 ```
 
 Op de gehoste omgeving (PHP-FPM) zijn er standaard meerdere workers, dus daar is niets
